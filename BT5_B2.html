@@ -6,33 +6,35 @@
     <script src="BT5_B2.js"></script>
 </head>
 <body>
-    <table>
-        <tr>
-            <th>Amount</th>
-            <th>From Currency</th>
-            <th>To Currency</th>
-        </tr>
-        <tr>
-            <td>
-                <input type="text">
-            </td>
-            <td>
-                <select name="money" id="vnd">
-                    <option value="VietNam">VND</option>
-                    <option value="USD">USD</option>
-                </select>
-            </td>
-            <td>
-                <select name="money" id="usd">
-                    <option value="USD">USD</option>
-                    <option value="VietNam">VND</option>
-                </select>
-            </td>
-            <td><button onclick="hamchuyendoitiente">Convert</button></td>
-        </tr>
-    </table>
-    <p> Result:  </p>
-    <script>
-    </script>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td>
+            <input id="nhaptien" type="text">
+        </td>
+        <td>
+            <select id="chuyendoi" onchange="hamchuyendoitiente()">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="chuyendoi2" onchange="hamchuyendoitiente()">
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="hamchuyendoitiente()">Convert</button>
+        </td>
+    </tr>
+</table>
+<h1 id="ketqua"></h1>
+<script>
+</script>
 </body>
 </html>
