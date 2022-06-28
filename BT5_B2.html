@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text">
+            </td>
+            <td>
+                <select name="money" id="vnd">
+                    <option value="VietNam">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select name="money" id="usd">
+                    <option value="USD">USD</option>
+                    <option value="VietNam">VND</option>
+                </select>
+            </td>
+            <td><button onclick="change">Convert</button></td>
+        </tr>
+    </table>
+    <p> Result: </p>
+    <script>
+        let usd = money * 23000;
+        let vnd = money / 23000;
+
+    </script>
+</body>
+</html>
